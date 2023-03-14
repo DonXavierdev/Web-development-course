@@ -1,0 +1,13 @@
+<h2>Programming languages</h2>
+<ul id="languages"></ul>
+<script>
+    languages=["kotlin","rust","typescript","python","Ruby"]
+    result=[]
+    let createListItem=value => {
+        let element = "<li>"+value+"</li>"
+        result.push(element)
+    }
+    languages.forEach(createListItem)
+    let html =result.join("\n")
+    document.getElementById("languages").innerHTML=html
+</script>
