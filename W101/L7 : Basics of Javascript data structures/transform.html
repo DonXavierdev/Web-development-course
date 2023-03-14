@@ -1,0 +1,20 @@
+<h2>Transforming arrays</h2>
+<!--
+    files directory:
+    assets/
+    images/
+    1-idle.png
+    2-
+    3-
+    4-
+    5-
+
+-->
+<script>
+    let actions=["idle","forward","backward","jump","kick"]
+    // to map actions to image paths
+    // we need to map 'idle' to "assets/images/1-idle.png"
+    // we need to know index of "idle" to map to the correct path
+    transform=(item,index)=> "assets/images/"+String(index+1)+"-"+item+".png"
+    result=actions.map(transform)
+</script>
